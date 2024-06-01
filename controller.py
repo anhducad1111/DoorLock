@@ -4,10 +4,10 @@ import time
 comport = 'COM5'
 board = pyfirmata.Arduino(comport)
 
-led_pins = [13, 9, 10, 11, 12]
+led_pins = [12, 8, 9, 10, 11]
 leds = [board.get_pin('d:{}:o'.format(pin)) for pin in led_pins]
 
-buzzer_pin = 8
+buzzer_pin = 5
 buzzer = board.get_pin('d:{}:o'.format(buzzer_pin))
 
 locker_pin = 7
